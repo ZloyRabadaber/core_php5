@@ -1,0 +1,4 @@
+test:
+  image: zrabadaber/core_php5
+  ports:
+    - "80:80"

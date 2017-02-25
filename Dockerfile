@@ -1,4 +1,4 @@
-FROM php:5-apache
+FROM php:7.0-apache
 
 MAINTAINER Zloy Rabadaber <zrabadaber@gmail.com>
 ENV REFRESHED_AT 2016-03-01

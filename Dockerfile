@@ -44,8 +44,7 @@ ADD ./html/myip.php /var/www/html/myip.php
 ADD ./html/phpinfo.php /var/www/html/phpinfo.php
 
 RUN echo "RemoteIPHeader X-Forwarded-For" >> /etc/apache2/apache2.conf && \
-    echo "RemoteIPHeader X-Real-IP" >> /etc/apache2/apache2.conf && \
-    ln -s /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-enabled/000-default.conf
+    echo "RemoteIPHeader X-Real-IP" >> /etc/apache2/apache2.conf
 
 RUN echo "FromLineOverride=YES" >> /etc/ssmtp/ssmtp.conf
 

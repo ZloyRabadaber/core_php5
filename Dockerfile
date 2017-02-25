@@ -1,4 +1,4 @@
-FROM php:7.0-apache
+FROM php:5-apache
 
 MAINTAINER Zloy Rabadaber <zrabadaber@gmail.com>
 ENV REFRESHED_AT 2016-03-01
@@ -23,8 +23,8 @@ RUN apt-get update && apt-get install -y \
     && docker-php-ext-install ftp \
     && docker-php-ext-install -j$(nproc) gd
 
-RUN apt-get update && apt-get install -y libmemcached-dev \
-    && pecl install memcached \
+RUN apt-get update && apt-get install -y libmemcached-dev zlib1g-dev \
+    && memcached-2.2.0 \
     && docker-php-ext-enable memcached
 
 RUN a2enmod remoteip

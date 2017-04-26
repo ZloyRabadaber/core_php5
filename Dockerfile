@@ -34,6 +34,7 @@ RUN curl -fsSL 'https://xcache.lighttpd.net/pub/Releases/3.2.0/xcache-3.2.0.tar.
 RUN a2enmod remoteip
 RUN a2enmod rewrite
 RUN a2enmod ssl
+RUN a2enmod headers
 
 RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 

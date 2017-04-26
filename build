@@ -1,1 +1,1 @@
-docker build -t zrabadaber/core_php5 .
+docker build -t zrabadaber/core_php5_test .

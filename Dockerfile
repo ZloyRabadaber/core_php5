@@ -40,6 +40,7 @@ RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 ADD ./php/uploads.ini  $PHP_INI_DIR/conf.d/uploads.ini
 ADD ./php/mail.ini  $PHP_INI_DIR/conf.d/mail.ini
+ADD ./php/xcache.ini  $PHP_INI_DIR/conf.d/xcache.ini
 
 ADD ./html/myip.php /var/www/html/myip.php
 ADD ./html/phpinfo.php /var/www/html/phpinfo.php
